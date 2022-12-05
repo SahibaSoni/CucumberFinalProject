@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +10,7 @@ public class SkyBlueBackgroundPage {
 	
 	WebDriver driver;
 	
-	public SkyBlueBackgroundPage()
+	public SkyBlueBackgroundPage(WebDriver driver)
 	{
 		this.driver = driver;
 	}
@@ -27,6 +28,9 @@ public class SkyBlueBackgroundPage {
 	@FindBy(how = How.XPATH,using = "//body[@style = 'background-color: white;']")
 	WebElement whiteColorValidation;
 	
+	/*@FindBy(how = How.XPATH,using = "//body")
+	WebElement bodyElement;
+	*/
 	
 	public String skyBlueButton()
 	{
@@ -39,8 +43,10 @@ public class SkyBlueBackgroundPage {
 		skyBlueButton.click();
 	}
 	
-	public String colorValidation()
+	public String colorSkyValidation()
 	{
+		System.out.println("********************"+driver.findElement(By.tagName("body")).getAttribute("style"));
+
 		String actualColor = skyBlueColorValidation.getCssValue("background-color");
 		return actualColor;
 		
@@ -59,9 +65,8 @@ public class SkyBlueBackgroundPage {
 
 	public String colorWhiteValidation()
 	{
-		String actualColor1 = whiteColorValidation.getCssValue("background-color");
-		System.out.println("Color code = "+actualColor1);
-		return actualColor1;
+		String actualColor = whiteColorValidation.getCssValue("background-color");
+		return actualColor;
 		
 	}
 }

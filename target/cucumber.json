@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3233911900,
+              "duration": 2255339400,
               "status": "passed"
             },
             "match": {
@@ -18,23 +18,12 @@
         "name": "1 Sky Blue Background",
         "description": "",
         "id": "sky-blue-background-functionality;1-sky-blue-background",
-        "after": [
-          {
-            "result": {
-              "duration": 16816254800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SkyBlueBackground.teardown()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 138076800,
+              "duration": 112642000,
               "status": "passed"
             },
             "line": 6,
@@ -52,7 +41,7 @@
           },
           {
             "result": {
-              "duration": 2089024600,
+              "duration": 2065669300,
               "status": "passed"
             },
             "line": 7,
@@ -70,11 +59,11 @@
           },
           {
             "result": {
-              "duration": 3036659900,
+              "duration": 70899800,
               "status": "passed"
             },
             "line": 8,
-            "name": "the background color will change to sky blue",
+            "name": "The background color will change to sky blue",
             "match": {
               "location": "SkyBlueBackground.the_background_color_will_change_to_sky_blue()"
             },
@@ -86,7 +75,7 @@
         "before": [
           {
             "result": {
-              "duration": 2170741100,
+              "duration": 1630492800,
               "status": "passed"
             },
             "match": {
@@ -98,23 +87,12 @@
         "name": "2 White Background Change",
         "description": "",
         "id": "sky-blue-background-functionality;2-white-background-change",
-        "after": [
-          {
-            "result": {
-              "duration": 793266600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "SkyBlueBackground.teardown()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 53002400,
+              "duration": 47067900,
               "status": "passed"
             },
             "line": 12,
@@ -132,7 +110,7 @@
           },
           {
             "result": {
-              "duration": 82100,
+              "duration": 2066497500,
               "status": "passed"
             },
             "line": 13,
@@ -150,11 +128,11 @@
           },
           {
             "result": {
-              "duration": 24100,
+              "duration": 34824200,
               "status": "passed"
             },
             "line": 14,
-            "name": "the background color will change to white",
+            "name": "The background color will change to white",
             "match": {
               "location": "SkyBlueBackground.the_background_color_will_change_to_white()"
             },

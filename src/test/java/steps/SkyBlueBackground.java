@@ -1,14 +1,18 @@
 package steps;
 
+import org.junit.After;
+import org.junit.Assert;
+//import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import cucumber.api.java.After;
+//import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
+//import junit.framework.Assert;
 import pages.SkyBlueBackgroundPage;
 import pages.TestBase;
 
@@ -52,7 +56,7 @@ public class SkyBlueBackground extends TestBase{
 		Thread.sleep(2000);
 		break;
 		
-		case "Set White Backgrouond"  : skyBlue.clickWhiteButton();
+		case "Set White Background"  : skyBlue.clickWhiteButton();
 		Thread.sleep(2000);
 		break;
 		
@@ -63,36 +67,27 @@ public class SkyBlueBackground extends TestBase{
 		
 	}
 	
-	@Then("^the background color will change to sky blue$")
+	@Then("^The background color will change to sky blue$")
 	public void the_background_color_will_change_to_sky_blue()
 	{
 			String expectedColor = "rgba(135, 206, 235, 1)";
-			String actualColor = skyBlue.colorValidation();
-			try {
-				Thread.sleep(3000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			String actualColor = skyBlue.colorSkyValidation();
+			
 			Assert.assertEquals("Page color is not matching", expectedColor, actualColor);
 			
 
 	}
 	
-	@Then("^the background color will change to white$")
+	@Then("^The background color will change to white$")
 	public void the_background_color_will_change_to_white() 
 	{
-//			String expectedColor = "rgba(255, 255, 255, 1)";
-//			String actualColor = skyBlue.colorWhiteValidation();
-//			
-//			try {
-//				Thread.sleep(2000);
-//			} catch (InterruptedException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//
-//			//Assert.assertEquals("Page color is not matching", expectedColor, actualColor);
+			String expectedColor = "rgba(255, 255, 255, 1)";
+			//String actualColor=body.getAttribute("style");
+			String actualColor = skyBlue.colorWhiteValidation();
+			
+			
+
+			Assert.assertEquals("Page color is not matching", expectedColor, actualColor);
 	}
 	
 	
@@ -106,3 +101,5 @@ public class SkyBlueBackground extends TestBase{
 	
 	
 }
+
+

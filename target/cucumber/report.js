@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 3233911900,
+  "duration": 2255339400,
   "status": "passed"
 });
 formatter.scenario({
@@ -36,7 +36,7 @@ formatter.step({
 });
 formatter.step({
   "line": 8,
-  "name": "the background color will change to sky blue",
+  "name": "The background color will change to sky blue",
   "keyword": "Then "
 });
 formatter.match({
@@ -49,7 +49,7 @@ formatter.match({
   "location": "SkyBlueBackground.button_exists(String)"
 });
 formatter.result({
-  "duration": 138076800,
+  "duration": 112642000,
   "status": "passed"
 });
 formatter.match({
@@ -62,22 +62,18 @@ formatter.match({
   "location": "SkyBlueBackground.i_click_on_the_button_as(String)"
 });
 formatter.result({
-  "duration": 2089024600,
+  "duration": 2065669300,
   "status": "passed"
 });
 formatter.match({
   "location": "SkyBlueBackground.the_background_color_will_change_to_sky_blue()"
 });
 formatter.result({
-  "duration": 3036659900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 16816254800,
+  "duration": 70899800,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2170741100,
+  "duration": 1630492800,
   "status": "passed"
 });
 formatter.scenario({
@@ -100,7 +96,7 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "the background color will change to white",
+  "name": "The background color will change to white",
   "keyword": "Then "
 });
 formatter.match({
@@ -113,7 +109,7 @@ formatter.match({
   "location": "SkyBlueBackground.button_exists(String)"
 });
 formatter.result({
-  "duration": 53002400,
+  "duration": 47067900,
   "status": "passed"
 });
 formatter.match({
@@ -126,18 +122,14 @@ formatter.match({
   "location": "SkyBlueBackground.i_click_on_the_button_as(String)"
 });
 formatter.result({
-  "duration": 82100,
+  "duration": 2066497500,
   "status": "passed"
 });
 formatter.match({
   "location": "SkyBlueBackground.the_background_color_will_change_to_white()"
 });
 formatter.result({
-  "duration": 24100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 793266600,
+  "duration": 34824200,
   "status": "passed"
 });
 });
